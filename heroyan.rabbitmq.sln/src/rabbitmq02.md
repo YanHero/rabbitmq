@@ -1,4 +1,4 @@
-# 一、RabbitMQ之HelloWorld
+# 二、RabbitMQ之简单队列
 
 标签（空格分隔）： RabbitMQ学习笔记
 
