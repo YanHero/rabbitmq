@@ -17,27 +17,27 @@ namespace heroyan.rabbitmq.pubsub.producer
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.QueueDeclare(queue: "task_queue", durable: true, exclusive: false, autoDelete: false, arguments: null); // 队列持久化                
+                channel.ExchangeDeclare(exchange: "logs", type: "fanout");
 
-                var properties = channel.CreateBasicProperties();
-                properties.Persistent = true; // 消息持久化
+                var message = GetMessage(args);
+                var body = Encoding.UTF8.GetBytes(message);
+                channel.BasicPublish(exchange: "logs", routingKey: "", basicProperties: null, body: body);
 
-                var msg = "hello";
-
-                for (int i = 0; i < 20; i++)
-                {
-                    msg += ".";
-
-                    var body = Encoding.UTF8.GetBytes(msg);
-
-                    channel.BasicPublish(exchange: "", routingKey: "task_queue", basicProperties: properties, body: body);
-
-                    Console.WriteLine($"[x] Sent {msg}");
-                }
+                Console.WriteLine($"[x] Sent {message}");
             }
 
             Console.WriteLine("Press [enter] to exit.");
             Console.ReadKey();
+        }
+
+        /// <summary>
+        /// Gets the message.
+        /// </summary>
+        /// <returns>The message.</returns>
+        /// <param name="args">Arguments.</param>
+        private static string GetMessage(string[] args)
+        {
+            return args.Length > 0 ? string.Join(" ", args) : "info：Hello World!";
         }
     }
 }
