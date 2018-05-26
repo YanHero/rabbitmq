@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="heroyan.rabbitmq.pubsub.consumer\obj\heroyan.rabbitmq.pubsub.consumer.csproj.nuget.cache" />
+    <None Remove="heroyan.rabbitmq.pubsub.consumer\obj\heroyan.rabbitmq.pubsub.consumer.csproj.nuget.g.props" />
+    <None Remove="heroyan.rabbitmq.pubsub.consumer\obj\heroyan.rabbitmq.pubsub.consumer.csproj.nuget.g.targets" />
+    <None Remove="heroyan.rabbitmq.pubsub.consumer\obj\project.assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="heroyan.rabbitmq.pubsub.consumer\Program.cs" />
+    <Compile Remove="heroyan.rabbitmq.pubsub.consumer\obj\Debug\netcoreapp2.0\heroyan.rabbitmq.pubsub.consumer.AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="5.0.1" />
+  </ItemGroup>
+</Project>
