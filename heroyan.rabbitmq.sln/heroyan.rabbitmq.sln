@@ -33,6 +33,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.topic.prod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.topic.consumer", "heroyan.rabbitmq.topic.consumer\heroyan.rabbitmq.topic.consumer.csproj", "{5AC48E89-6EEE-477D-9E71-4BBA081020B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rpc", "rpc", "{EA03676C-CC93-439B-95B6-6C184D7FDB3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.rpc.client", "heroyan.rabbitmq.rpc.client\heroyan.rabbitmq.rpc.client.csproj", "{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.rpc.server", "heroyan.rabbitmq.rpc.server\heroyan.rabbitmq.rpc.server.csproj", "{9F01E3E9-072F-469F-BE2A-328136F983EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +85,14 @@ Global
 		{5AC48E89-6EEE-477D-9E71-4BBA081020B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AC48E89-6EEE-477D-9E71-4BBA081020B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AC48E89-6EEE-477D-9E71-4BBA081020B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F01E3E9-072F-469F-BE2A-328136F983EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F01E3E9-072F-469F-BE2A-328136F983EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F01E3E9-072F-469F-BE2A-328136F983EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F01E3E9-072F-469F-BE2A-328136F983EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +108,8 @@ Global
 		{C86252B5-B686-43FD-8790-9DDE2BE47408} = {5510BB6A-E149-4B8A-9938-A35CE12CEEA1}
 		{DAD99985-AC91-427E-A510-E1C00265A3F9} = {B859D254-EDEF-4A88-82BA-742C0AA044D4}
 		{5AC48E89-6EEE-477D-9E71-4BBA081020B2} = {B859D254-EDEF-4A88-82BA-742C0AA044D4}
+		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549} = {EA03676C-CC93-439B-95B6-6C184D7FDB3C}
+		{9F01E3E9-072F-469F-BE2A-328136F983EB} = {EA03676C-CC93-439B-95B6-6C184D7FDB3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {360F9AB5-9FFA-4EB5-AD08-9B2C73CBEC6E}
