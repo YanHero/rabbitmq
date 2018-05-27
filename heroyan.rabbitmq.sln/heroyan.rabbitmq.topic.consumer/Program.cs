@@ -3,7 +3,7 @@ using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace heroyan.rabbitmq.route.consumer
+namespace heroyan.rabbitmq.topic.consumer
 {
     class Program
     {
@@ -18,13 +18,13 @@ namespace heroyan.rabbitmq.route.consumer
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.ExchangeDeclare(exchange: "direct_logs", type: "direct");
+                channel.ExchangeDeclare(exchange: "topic_logs", type: "topic");
 
                 var queueName = channel.QueueDeclare().QueueName;
 
-                foreach (var severity in args)
+                foreach (var bindingKey in args)
                 {
-                    channel.QueueBind(queue: queueName, exchange: "direct_logs", routingKey: severity);
+                    channel.QueueBind(queue: queueName, exchange: "topic_logs", routingKey: bindingKey);
                 }
 
                 Console.WriteLine("[*] Waiting for messages.");
