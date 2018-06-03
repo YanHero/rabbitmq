@@ -54,10 +54,10 @@ namespace heroyan.rabbitmq.rpc.server
                 };
 
                 Console.WriteLine(" [x] Awaiting RPC requests");
-            }
 
-            Console.WriteLine("Press [enter] to exit.");
-            Console.ReadKey();
+                Console.WriteLine("Press [enter] to exit.");
+                Console.ReadKey();
+            }
         }
 
         /// <summary>

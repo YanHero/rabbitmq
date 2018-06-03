@@ -47,3 +47,19 @@ RabbitMQ官网：http://www.rabbitmq.com/。
 > 3、Exchange：它是发送消息的实体；
 > 4、Queue：这是接收消息的实体；
 > 5、Bind：将交换器和队列连接起来，并且封装消息的路由信息。
+
+## 6、Docker部署
+
+### 6.1、单机环境
+
+> 1、docker pull rabbitmq:management
+> 2、docker run -d --name rabbitmq -p 5671:5671 -p 5672:5672 -p 4369:4369 -p 25672:25672 -p 15671:15671 -p 15672:15672 rabbitmq:management
+
+### 6.2、伪集群环境 => 同一台机器部署多个实例
+
+> 1、Docker-Compose 是一个用户定义和运行多个容器的 Docker 应用程序；
+> 2、编写docker-compose.yml，运行docker-compose up -d，-d后台运行；
+> 3、docker-compose stop：停止；
+> 4、docker exec -i -t ca9d909c529c bash：进入ID为ca9d909c529c的容器；
+
+### 6.3、集群环境 => 多台机器部署相同实例
