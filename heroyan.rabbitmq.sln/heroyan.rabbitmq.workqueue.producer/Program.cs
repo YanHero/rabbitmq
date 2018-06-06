@@ -30,7 +30,9 @@ namespace heroyan.rabbitmq.workqueue.producer
 
                     var body = Encoding.UTF8.GetBytes(msg);
 
-                    channel.BasicPublish(exchange: "", routingKey: "task_queue", basicProperties: properties, body: body);
+                    // 当mandatory标志位设置为true时，如果exchange根据自身类型和消息routingKey无法找到一个合适的queue存储消息，
+                    // 那么broker会调用basic.return方法将消息返还给生产者;当mandatory设置为false时，出现上述情况broker会直接将消息丢弃
+                    channel.BasicPublish(exchange: "", routingKey: "task_queue", mandatory: true, basicProperties: properties, body: body); 
 
                     Console.WriteLine($"[x] Sent {msg}");
                 }

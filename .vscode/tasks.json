@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/heroyan.rabbitmq.sln/heroyan.rabbitmq.pubsub.consumer/heroyan.rabbitmq.pubsub.consumer.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

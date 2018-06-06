@@ -29,15 +29,22 @@ namespace heroyan.rabbitmq.workqueue.consumer
 
                 consumer.Received += (obj, e) =>
                 {
-                    var body = e.Body;
-                    var msg = Encoding.UTF8.GetString(body);
-                    Console.WriteLine("[x] Received {0}", msg);
+                    try
+                    {
+                        var body = e.Body;
+                        var msg = Encoding.UTF8.GetString(body);
+                        Console.WriteLine("[x] Received {0}", msg);
 
-                    int dots = msg.Split('.').Length - 1;
-                    Thread.Sleep(dots * 1000);
-                    Console.WriteLine("[x] Done");
+                        int dots = msg.Split('.').Length - 1;
+                        Thread.Sleep(dots * 1000);
+                        Console.WriteLine("[x] Done");
 
-                    channel.BasicAck(deliveryTag: e.DeliveryTag, multiple: false); // 消息确认
+                        channel.BasicAck(deliveryTag: e.DeliveryTag, multiple: false); // 消息确认            
+                    }
+                    catch (Exception ex)
+                    {
+                        channel.BasicNack(deliveryTag: e.DeliveryTag, multiple: false, requeue: true); // 取消消息                        
+                    }
                 };
 
                 channel.BasicConsume(queue: "task_queue", autoAck: false, consumer: consumer);
