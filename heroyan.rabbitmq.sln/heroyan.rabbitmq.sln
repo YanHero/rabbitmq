@@ -5,39 +5,49 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "simplequeue", "simplequeue", "{3B4FB61D-22CE-4A60-80A3-78F1E6237F82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.simplequeue.producer", "heroyan.rabbitmq.simplequeue.producer\heroyan.rabbitmq.simplequeue.producer.csproj", "{E04E025B-07EF-4BD1-BD9A-E22E742904A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.simplequeue.producer", "heroyan.rabbitmq.simplequeue.producer\heroyan.rabbitmq.simplequeue.producer.csproj", "{E04E025B-07EF-4BD1-BD9A-E22E742904A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.simplequeue.consumer", "heroyan.rabbitmq.simplequeue.consumer\heroyan.rabbitmq.simplequeue.consumer.csproj", "{2CF26869-8F4A-4B63-A6AD-A80B351AC283}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.simplequeue.consumer", "heroyan.rabbitmq.simplequeue.consumer\heroyan.rabbitmq.simplequeue.consumer.csproj", "{2CF26869-8F4A-4B63-A6AD-A80B351AC283}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workqueue", "workqueue", "{537C59FA-5230-448F-B111-D4AE0D40D741}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.workqueue.producer", "heroyan.rabbitmq.workqueue.producer\heroyan.rabbitmq.workqueue.producer.csproj", "{644B5144-F5B8-4EC1-9F80-B1359C560C3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.workqueue.producer", "heroyan.rabbitmq.workqueue.producer\heroyan.rabbitmq.workqueue.producer.csproj", "{644B5144-F5B8-4EC1-9F80-B1359C560C3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.workqueue.consumer", "heroyan.rabbitmq.workqueue.consumer\heroyan.rabbitmq.workqueue.consumer.csproj", "{FB6494B1-72D2-4C61-B336-9B2C5916F675}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.workqueue.consumer", "heroyan.rabbitmq.workqueue.consumer\heroyan.rabbitmq.workqueue.consumer.csproj", "{FB6494B1-72D2-4C61-B336-9B2C5916F675}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pubsub", "pubsub", "{85534FFD-9C9F-4D37-8025-924E7CF3881B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.pubsub.producer", "heroyan.rabbitmq.pubsub.producer\heroyan.rabbitmq.pubsub.producer.csproj", "{1ADD518B-8940-43B1-8CAF-429E2633638D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.pubsub.producer", "heroyan.rabbitmq.pubsub.producer\heroyan.rabbitmq.pubsub.producer.csproj", "{1ADD518B-8940-43B1-8CAF-429E2633638D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.pubsub.consumer", "heroyan.rabbitmq.pubsub.consumer\heroyan.rabbitmq.pubsub.consumer.csproj", "{5690CDE4-5289-4335-AD9B-8B5C016073A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.pubsub.consumer", "heroyan.rabbitmq.pubsub.consumer\heroyan.rabbitmq.pubsub.consumer.csproj", "{5690CDE4-5289-4335-AD9B-8B5C016073A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "route", "route", "{5510BB6A-E149-4B8A-9938-A35CE12CEEA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.route.producer", "heroyan.rabbitmq.route.producer\heroyan.rabbitmq.route.producer.csproj", "{FCBF6A9B-AF48-4F89-BC26-7CEB547AB51F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.route.producer", "heroyan.rabbitmq.route.producer\heroyan.rabbitmq.route.producer.csproj", "{FCBF6A9B-AF48-4F89-BC26-7CEB547AB51F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.route.consumer", "heroyan.rabbitmq.route.consumer\heroyan.rabbitmq.route.consumer.csproj", "{C86252B5-B686-43FD-8790-9DDE2BE47408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.route.consumer", "heroyan.rabbitmq.route.consumer\heroyan.rabbitmq.route.consumer.csproj", "{C86252B5-B686-43FD-8790-9DDE2BE47408}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topic", "topic", "{B859D254-EDEF-4A88-82BA-742C0AA044D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.topic.producer", "heroyan.rabbitmq.topic.producer\heroyan.rabbitmq.topic.producer.csproj", "{DAD99985-AC91-427E-A510-E1C00265A3F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.topic.producer", "heroyan.rabbitmq.topic.producer\heroyan.rabbitmq.topic.producer.csproj", "{DAD99985-AC91-427E-A510-E1C00265A3F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.topic.consumer", "heroyan.rabbitmq.topic.consumer\heroyan.rabbitmq.topic.consumer.csproj", "{5AC48E89-6EEE-477D-9E71-4BBA081020B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.topic.consumer", "heroyan.rabbitmq.topic.consumer\heroyan.rabbitmq.topic.consumer.csproj", "{5AC48E89-6EEE-477D-9E71-4BBA081020B2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rpc", "rpc", "{EA03676C-CC93-439B-95B6-6C184D7FDB3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.rpc.client", "heroyan.rabbitmq.rpc.client\heroyan.rabbitmq.rpc.client.csproj", "{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.rpc.client", "heroyan.rabbitmq.rpc.client\heroyan.rabbitmq.rpc.client.csproj", "{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.rpc.server", "heroyan.rabbitmq.rpc.server\heroyan.rabbitmq.rpc.server.csproj", "{9F01E3E9-072F-469F-BE2A-328136F983EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.rpc.server", "heroyan.rabbitmq.rpc.server\heroyan.rabbitmq.rpc.server.csproj", "{9F01E3E9-072F-469F-BE2A-328136F983EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "transcation", "transcation", "{653FBBCC-7054-4C22-8F91-5174BB03C6C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.trans.producer", "heroyan.rabbitmq.trans.producer\heroyan.rabbitmq.trans.producer.csproj", "{9E1559DE-EC22-48B6-AA3D-65770F5B67DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.confirm.producer", "heroyan.rabbitmq.confirm.producer\heroyan.rabbitmq.confirm.producer.csproj", "{10648574-9F69-47E9-A284-A31BB09D027E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.confirm.consumer", "heroyan.rabbitmq.confirm.consumer\heroyan.rabbitmq.confirm.consumer.csproj", "{93EDDDAE-9714-4199-BFA8-F193640F33A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.trans.consumer", "heroyan.rabbitmq.trans.consumer\heroyan.rabbitmq.trans.consumer.csproj", "{721727B1-989A-4E79-A410-D904EA7393F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +103,22 @@ Global
 		{9F01E3E9-072F-469F-BE2A-328136F983EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F01E3E9-072F-469F-BE2A-328136F983EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F01E3E9-072F-469F-BE2A-328136F983EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1559DE-EC22-48B6-AA3D-65770F5B67DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1559DE-EC22-48B6-AA3D-65770F5B67DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1559DE-EC22-48B6-AA3D-65770F5B67DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1559DE-EC22-48B6-AA3D-65770F5B67DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10648574-9F69-47E9-A284-A31BB09D027E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10648574-9F69-47E9-A284-A31BB09D027E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10648574-9F69-47E9-A284-A31BB09D027E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10648574-9F69-47E9-A284-A31BB09D027E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93EDDDAE-9714-4199-BFA8-F193640F33A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93EDDDAE-9714-4199-BFA8-F193640F33A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93EDDDAE-9714-4199-BFA8-F193640F33A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93EDDDAE-9714-4199-BFA8-F193640F33A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{721727B1-989A-4E79-A410-D904EA7393F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721727B1-989A-4E79-A410-D904EA7393F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721727B1-989A-4E79-A410-D904EA7393F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721727B1-989A-4E79-A410-D904EA7393F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +136,10 @@ Global
 		{5AC48E89-6EEE-477D-9E71-4BBA081020B2} = {B859D254-EDEF-4A88-82BA-742C0AA044D4}
 		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549} = {EA03676C-CC93-439B-95B6-6C184D7FDB3C}
 		{9F01E3E9-072F-469F-BE2A-328136F983EB} = {EA03676C-CC93-439B-95B6-6C184D7FDB3C}
+		{9E1559DE-EC22-48B6-AA3D-65770F5B67DA} = {653FBBCC-7054-4C22-8F91-5174BB03C6C5}
+		{10648574-9F69-47E9-A284-A31BB09D027E} = {653FBBCC-7054-4C22-8F91-5174BB03C6C5}
+		{93EDDDAE-9714-4199-BFA8-F193640F33A9} = {653FBBCC-7054-4C22-8F91-5174BB03C6C5}
+		{721727B1-989A-4E79-A410-D904EA7393F5} = {653FBBCC-7054-4C22-8F91-5174BB03C6C5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {360F9AB5-9FFA-4EB5-AD08-9B2C73CBEC6E}
