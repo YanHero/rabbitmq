@@ -31,8 +31,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "topic", "topic", "{B859D254
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.topic.producer", "heroyan.rabbitmq.topic.producer\heroyan.rabbitmq.topic.producer.csproj", "{DAD99985-AC91-427E-A510-E1C00265A3F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.topic.consumer", "heroyan.rabbitmq.topic.consumer\heroyan.rabbitmq.topic.consumer.csproj", "{5AC48E89-6EEE-477D-9E71-4BBA081020B2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rpc", "rpc", "{EA03676C-CC93-439B-95B6-6C184D7FDB3C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.rpc.client", "heroyan.rabbitmq.rpc.client\heroyan.rabbitmq.rpc.client.csproj", "{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}"
@@ -41,13 +39,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.rpc.server
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "transcation", "transcation", "{653FBBCC-7054-4C22-8F91-5174BB03C6C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.trans.producer", "heroyan.rabbitmq.trans.producer\heroyan.rabbitmq.trans.producer.csproj", "{9E1559DE-EC22-48B6-AA3D-65770F5B67DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.trans.producer", "heroyan.rabbitmq.trans.producer\heroyan.rabbitmq.trans.producer.csproj", "{9E1559DE-EC22-48B6-AA3D-65770F5B67DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.confirm.producer", "heroyan.rabbitmq.confirm.producer\heroyan.rabbitmq.confirm.producer.csproj", "{10648574-9F69-47E9-A284-A31BB09D027E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.confirm.producer", "heroyan.rabbitmq.confirm.producer\heroyan.rabbitmq.confirm.producer.csproj", "{10648574-9F69-47E9-A284-A31BB09D027E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.confirm.consumer", "heroyan.rabbitmq.confirm.consumer\heroyan.rabbitmq.confirm.consumer.csproj", "{93EDDDAE-9714-4199-BFA8-F193640F33A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.confirm.consumer", "heroyan.rabbitmq.confirm.consumer\heroyan.rabbitmq.confirm.consumer.csproj", "{93EDDDAE-9714-4199-BFA8-F193640F33A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.trans.consumer", "heroyan.rabbitmq.trans.consumer\heroyan.rabbitmq.trans.consumer.csproj", "{721727B1-989A-4E79-A410-D904EA7393F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "heroyan.rabbitmq.trans.consumer", "heroyan.rabbitmq.trans.consumer\heroyan.rabbitmq.trans.consumer.csproj", "{721727B1-989A-4E79-A410-D904EA7393F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "heroyan.rabbitmq.topic.consumer", "heroyan.rabbitmq.topic.consumer\heroyan.rabbitmq.topic.consumer.csproj", "{562EC011-6A9E-4BA2-B5DF-29B5BC4429B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,10 +91,6 @@ Global
 		{DAD99985-AC91-427E-A510-E1C00265A3F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAD99985-AC91-427E-A510-E1C00265A3F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAD99985-AC91-427E-A510-E1C00265A3F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5AC48E89-6EEE-477D-9E71-4BBA081020B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5AC48E89-6EEE-477D-9E71-4BBA081020B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5AC48E89-6EEE-477D-9E71-4BBA081020B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5AC48E89-6EEE-477D-9E71-4BBA081020B2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -119,6 +115,10 @@ Global
 		{721727B1-989A-4E79-A410-D904EA7393F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{721727B1-989A-4E79-A410-D904EA7393F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{721727B1-989A-4E79-A410-D904EA7393F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562EC011-6A9E-4BA2-B5DF-29B5BC4429B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562EC011-6A9E-4BA2-B5DF-29B5BC4429B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562EC011-6A9E-4BA2-B5DF-29B5BC4429B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562EC011-6A9E-4BA2-B5DF-29B5BC4429B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,13 +133,13 @@ Global
 		{FCBF6A9B-AF48-4F89-BC26-7CEB547AB51F} = {5510BB6A-E149-4B8A-9938-A35CE12CEEA1}
 		{C86252B5-B686-43FD-8790-9DDE2BE47408} = {5510BB6A-E149-4B8A-9938-A35CE12CEEA1}
 		{DAD99985-AC91-427E-A510-E1C00265A3F9} = {B859D254-EDEF-4A88-82BA-742C0AA044D4}
-		{5AC48E89-6EEE-477D-9E71-4BBA081020B2} = {B859D254-EDEF-4A88-82BA-742C0AA044D4}
 		{2D75FF01-9A6B-44E2-9C13-20D6B68C8549} = {EA03676C-CC93-439B-95B6-6C184D7FDB3C}
 		{9F01E3E9-072F-469F-BE2A-328136F983EB} = {EA03676C-CC93-439B-95B6-6C184D7FDB3C}
 		{9E1559DE-EC22-48B6-AA3D-65770F5B67DA} = {653FBBCC-7054-4C22-8F91-5174BB03C6C5}
 		{10648574-9F69-47E9-A284-A31BB09D027E} = {653FBBCC-7054-4C22-8F91-5174BB03C6C5}
 		{93EDDDAE-9714-4199-BFA8-F193640F33A9} = {653FBBCC-7054-4C22-8F91-5174BB03C6C5}
 		{721727B1-989A-4E79-A410-D904EA7393F5} = {653FBBCC-7054-4C22-8F91-5174BB03C6C5}
+		{562EC011-6A9E-4BA2-B5DF-29B5BC4429B6} = {B859D254-EDEF-4A88-82BA-742C0AA044D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {360F9AB5-9FFA-4EB5-AD08-9B2C73CBEC6E}
